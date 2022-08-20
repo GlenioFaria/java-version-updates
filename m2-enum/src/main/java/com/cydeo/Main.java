@@ -45,6 +45,11 @@ public class Main {
 
         calculate(4,6,Operation.PLUS);
 
+        System.out.println("How to retrieve the constant value ");
+        System.out.println(Currency.PENNY.getValue());
+        System.out.println(Currency.QUARTER.getValue());
+        System.out.println(Currency.QUARTER.ordinal());// give the index number of this constant in enum
+
     }
 
     private static void calculate(double x, double y, Operation operation){
