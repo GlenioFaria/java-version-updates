@@ -21,6 +21,9 @@ public class AppleTest {
         List<Apple> greenApple = filterApples(inventory, new AppleGreenColorPredicate());
         System.out.println(greenApple);
 
+        //ApplePredicate weight = (Apple apple) -> apple.getWeight()>200;
+        ApplePredicate weight =  apple -> apple.getWeight()>200;// Type Inference
+        filterApples(inventory, weight);
 
     }
 
