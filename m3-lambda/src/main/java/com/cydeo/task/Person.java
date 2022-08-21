@@ -1,5 +1,4 @@
-package com.cydeo;
-
+package com.cydeo.task;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,8 +9,10 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Orange {
+public class Person {
 
-    private int weight;
-    private  Color color;
+    private String name;
+    private int age;
+    private Gender gender;
+
 }
