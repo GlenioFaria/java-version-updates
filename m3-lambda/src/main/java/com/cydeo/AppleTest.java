@@ -14,6 +14,8 @@ public class AppleTest {
         inventory.add(new Apple(200, Color.GREEN));
         inventory.add(new Apple(500, Color.RED));
 
+        inventory.forEach(apple -> System.out.println(apple));
+
         AppleHeavyPredicate abc =  new AppleHeavyPredicate();
         List<Apple> heavy = filterApples(inventory,abc);
         System.out.println(heavy);
