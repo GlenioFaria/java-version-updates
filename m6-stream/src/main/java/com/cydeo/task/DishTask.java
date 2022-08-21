@@ -40,5 +40,7 @@ public class DishTask {
                 .map(Dish::getName)
                 .forEach(System.out::println);
 
+
+
     }
 }
