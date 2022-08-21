@@ -36,6 +36,19 @@ public class StreamOperation {
                 .skip(1)
                 .forEach(System.out::println);
 
+        System.out.println("MAP");
+        list.stream()
+                .map(number -> number*5)
+                .filter(i->i%4== 0)
+                .forEach(System.out::println);
+
+        Stream.of("JAVA","APPLE","HONDA","DEVELOPER")
+                .map(String::length)
+                .forEach(System.out::println);
+
+
+
+
 
 
 
