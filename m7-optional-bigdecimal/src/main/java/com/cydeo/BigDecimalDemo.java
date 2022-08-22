@@ -31,8 +31,23 @@ public class BigDecimalDemo {
         System.out.println(number1.setScale(2, RoundingMode.CEILING));
         System.out.println(number1.setScale(2, RoundingMode.FLOOR));
 
+        //Do not use equals(). Use compareTo()
+        System.out.println(new BigDecimal("2").compareTo(new BigDecimal("2")));//0
+        System.out.println(new BigDecimal("3").compareTo(new BigDecimal("2")));//1
+        System.out.println(new BigDecimal("1").compareTo(new BigDecimal("2")));//-1
+
 
 
     }
+
 }
+
+class Employee{
+
+    private String name;
+    private BigDecimal salary;
+    // private double salary;
+}
+
+
 
