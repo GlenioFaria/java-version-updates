@@ -52,6 +52,17 @@ public class CollectorsDemo {
                 .collect(Collectors.counting());
         System.out.println(eventCount);
 
+        //averagingInt(ToIntFunction) : returns the average of the integers passed values
+        Double calorieAverage = DishData.getAll().stream()
+                .collect(Collectors.averagingInt(Dish::getCalories));
+        System.out.println(calorieAverage);
+
+        //joining() : is used to join various elements of a character or sting array into a single object
+        List<String> courses = Arrays.asList("Java", "JS", "TS");
+        String str = courses.stream()
+                .collect(Collectors.joining(","));
+        System.out.println(str);
+
 
     }
 }
