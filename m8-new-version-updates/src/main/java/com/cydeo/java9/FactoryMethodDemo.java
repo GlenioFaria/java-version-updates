@@ -2,7 +2,7 @@ package com.cydeo.java9;
 
 import java.util.*;
 
-public class FactorymethodDemo {
+public class FactoryMethodDemo {
 
     public static void main(String[] args) {
 
