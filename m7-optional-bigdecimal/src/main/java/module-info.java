@@ -1,6 +1,6 @@
-module moduleJava8 {
+module module7 {
 
-    requires moduleJava9;
+    requires module8;
 
 
 }
